@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'ppneuemontreal-medium';
+  src: url(../public/ppneuemontreal-medium.otf);
+}
+@font-face{
+  font-family: 'ppneuemontreal-book';
+  src: url(../public/ppneuemontreal-book.otf);
+}
+@font-face{
+  font-family: 'ppneuemontreal-thin';
+  src: url(../public/ppneuemontreal-thin.otf);
+}
+
+.test{
+  font-family:  'ppneuemontreal-medium';
+}
+
+/* .tilt{
+  -webkit-transform: perspective(100px) rotateX(10deg);
+} */
+
+.tilt{
+  -webkit-transform: perspective(100px) rotateX(3deg);
+}
+
+.boldText{
+  font-family: 'ppneuemontreal-medium';
+}
+
+.thinText{
+  font-family: 'ppneuemontreal-thin';
+}
+
+.regularText{
+  font-family: 'ppneuemontreal-book';
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+.swiper-slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.swiper-image {
+  height: 500px;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+.slick-dots li button:before{
+  color: white;
+}
+.slick-dots li.slick-active button:before {
+  color: white;
+}
